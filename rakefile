@@ -18,10 +18,10 @@ task :publish do
         
         ## Net::SSH performs every exec! in a separate shell so we need to do it all at once
         cmd_1 = "cd #{$remote_path}"
-        cmd_2 = "git checout master"
+        cmd_2 = "git checkout master"
         cmd_3 = "git clean -d -x -f"
         cmd_4 = "git pull"
-        ssh.exec! "{cmd_1} && {cmd_2} && {cmd_3} && {cmd_4}"
+        ssh.exec! "#{cmd_1} && #{cmd_2} && #{cmd_3} && #{cmd_4}"
     
     end # Net::SSH.start
 
