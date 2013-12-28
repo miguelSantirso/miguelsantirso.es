@@ -1,0 +1,31 @@
+$host = 'pncil.com'
+$username = 'miguelsantirso'
+$remote_path = 'miguelsantirso.es'
+
+desc "Publishes the site!"
+task :publish do
+    require 'net/sftp'
+    require 'highline/import'
+    
+    password = ask("Enter password for host '#{$host}':") { |q| q.echo = "x" }
+    
+    Net::SSH.start(
+        $host, 
+        $username,
+        :password => password, 
+        :auth_methods => ['password'],
+        :compression => 'zlib') do |sftp|
+        
+        #sftp.upload!('./site', $remote_path);
+        #FileList.new(
+    
+    end # Net::SFTP.start
+
+end
+
+
+desc "Installs the required gems"
+task :first_time do
+    sh 'gem install rakefile'
+    sh 'gem install net-ssh'
+end

@@ -1,0 +1,78 @@
+body, html { font-family: 'Quicksand', sans-serif; background-color: #eef8eb; }
+
+body { max-width: 800px; margin: 0 auto; }
+
+h1 { font-size: 90px; font-weight: normal; letter-spacing: -1px; margin: -20px 0 0; padding: 0; }
+
+.timeline {
+    margin-left: 50px;
+    border-left: 3px solid #ccc;
+}
+
+.timeline_icon {
+    position: absolute;
+    left: -44px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #00aaff;
+    border-radius: 40px;
+    border: 3px solid #eef8eb;
+    color: transparent;
+}
+.timeline_item:hover .timeline_icon { -webkit-filter: grayscale(0); -webkit-transition: all 0.3s ease-in-out; }
+
+.timeline_date { font-weight:bolder; padding: 18px 0 0px; margin: 0; font-size: 0.9em; color: #696969; }
+
+.timeline_item { position: relative; height: 80px; padding: 0 51px; margin: 30px 0; }
+
+.project_card h3 {  font-size: 34px; margin: 0 0 0 82px; font-weight: normal; color: #00dd9c; letter-spacing: -1px; }
+.timeline h3 { margin: 0; font-size: 1.7em; }
+
+.timeline_separator { background: #f9fff9; width: 100px; text-align: center; margin-left: -50px; padding: 4px 0; text-transform: uppercase; }
+
+.minibio { font-size: 41px; margin: -10px 0 0 5px; letter-spacing: -2px; padding-bottom: 30px; border-bottom: 1px solid #e3f4de; }
+    .minibio_important { font-weight:bold; }
+
+h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.salutation {
+    margin: 30px 0 0 6px; font-size: 36px;
+    padding: 0;
+}
+
+.project_card_icon {
+    width: 80px; height:80px; display: block;
+    border-radius: 40px;
+    position: absolute;
+    top: 8px; left: 8px;
+}
+
+.project_card {
+    border: 1px solid #d4efc7;
+    width: 360px; min-height: 96px;
+    margin: 0 10px 15px 0px;
+    position: relative;
+    padding: 14px 14px 8px;
+    background: #fdfffd;
+    box-shadow: 0 3px 10px #d5f6e0;
+    float: left;
+}
+
+h4 {
+    font-weight: normal;
+    margin: 0 0 15px 87px;
+    font-size: 23px;
+    letter-spacing: -2px;
+    color: #333;
+}
+
+.project_card p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #696969;
+}
