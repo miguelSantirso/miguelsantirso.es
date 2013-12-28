@@ -4,7 +4,7 @@ $remote_path = 'miguelsantirso.es'
 
 desc "Publishes the site!"
 task :publish do
-    require 'net/sftp'
+    require 'net/ssh'
     require 'highline/import'
     
     password = ask("Enter password for host '#{$host}':") { |q| q.echo = "x" }
@@ -16,11 +16,12 @@ task :publish do
         :auth_methods => ['password'],
         :compression => 'zlib') do |ssh|
         
-            ssh.exec! "touch mmm12";
-        ssh.exec! "cd #{$remote_path}";
-        ssh.exec! "git checkout master";
-        ssh.exec! "git clean -d -x -f";
-        ssh.exec! "git pull";
+        ## Net::SSH performs every exec! in a separate shell so we need to do it all at once
+        cmd_1 = "cd #{$remote_path}"
+        cmd_2 = "git checout master"
+        cmd_3 = "git clean -d -x -f"
+        cmd_4 = "git pull"
+        ssh.exec! "{cmd_1} && {cmd_2} && {cmd_3} && {cmd_4}"
     
     end # Net::SSH.start
 
