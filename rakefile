@@ -14,12 +14,14 @@ task :publish do
         $username,
         :password => password, 
         :auth_methods => ['password'],
-        :compression => 'zlib') do |sftp|
+        :compression => 'zlib') do |ssh|
         
-        #sftp.upload!('./site', $remote_path);
-        #FileList.new(
+        ssh.exec! "cd #{$remote_path}";
+        ssh.exec! "git checkout master";
+        ssh.exec! "git clean -d -x -f";
+        ssh.exec! "git pull";
     
-    end # Net::SFTP.start
+    end # Net::SSH.start
 
 end
 
