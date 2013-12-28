@@ -16,6 +16,7 @@ task :publish do
         :auth_methods => ['password'],
         :compression => 'zlib') do |ssh|
         
+            ssh.exec! "touch mmm12";
         ssh.exec! "cd #{$remote_path}";
         ssh.exec! "git checkout master";
         ssh.exec! "git clean -d -x -f";
@@ -23,6 +24,8 @@ task :publish do
     
     end # Net::SSH.start
 
+    puts "... done";
+    
 end
 
 
