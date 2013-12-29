@@ -77,22 +77,29 @@ p.project_card_subtitle {
 }
 .timeline_item { 
     position: relative;
-    min-height: 80px;
-    padding: 0 51px;
-    margin: 35px 0; 
+    min-height: 70px;
+    padding: 0 40px;
+    margin: 25px 0; 
+    display: block;
+    border: 0;
+    color: inherit;
 }
+a.timeline_item:hover { background: 0; color: #00b37e; }
 .timeline_icon {
     position: absolute;
-    left: -44px;
+    left: -24px;
+    top: 7px;
     display: block;
-    width: 80px;
-    height: 80px;
-    background-color: #00aaff;
-    border-radius: 40px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100px;
     border: 3px solid #f3f8f1;
+    background-position:center center;
+    transition: all 0.2s;
 }
-.timeline_date { padding: 15px 0 0px; margin: 0; font-size: 1.2em; color: #696969; }
-.timeline h3 { margin: -0.2em 0 0; font-size: 1.85em; }
+.timeline_item:hover .timeline_icon { width: 80px; height: 80px; left: -44px; top: -14px; transition: all 0.1s;  }
+.timeline_date { margin: 0; font-size: 1.1em; color: #696969; }
+.timeline h3 { margin: -0.2em 0 0; font-size: 1.6em; }
 
 /* media queries (tried to keep this as simple as possible) */
 
