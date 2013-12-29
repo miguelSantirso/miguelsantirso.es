@@ -18,7 +18,7 @@ a { color: #00b37e; text-decoration: none; padding: 1px 1px 3px; border-bottom: 
 /* project cards */
 
 .project_card {
-    border: 1px solid #d4efc7;
+    border-radius: 10px;
     max-width: 360px;
     min-height: 96px;
     margin: 0 10px 15px 0px;
