@@ -100,7 +100,7 @@ a.timeline_item:hover { background: 0; color: #00b37e; }
     background-position:center center;
     transition: all 0.2s;
 }
-.timeline_item:hover .timeline_icon { width: 80px; height: 80px; left: -44px; top: -14px; transition: all 0.1s;  }
+.timeline_item:hover .timeline_icon { width: 80px; height: 80px; left: -46px; top: -14px; transition: all 0.1s;  }
 .timeline_date { margin: 0; font-size: 1.1em; color: #696969; }
 .timeline h3 { margin: -0.2em 0 0; font-size: 1.6em; }
 
