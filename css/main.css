@@ -95,13 +95,13 @@ p.project_card_subtitle {
     .project_card { max-width:inherit; float: none; }
 }
 
-@media (max-width: 670px) 
+@media (max-width: 690px) 
 {
     body { font-size: 130%; }
 }
 
 @media (max-width: 460px) 
 {
-    body { font-size: 90%; }
+    body { font-size: 100%; }
 }
 
