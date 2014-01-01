@@ -83,11 +83,9 @@ p.project_card_subtitle {
     min-height: 70px;
     padding: 0 40px;
     margin: 25px 0; 
-    display: block;
-    border: 0;
-    color: inherit;
 }
-a.timeline_item:hover { background: 0; color: #00b37e; }
+.timeline_item h3 a { border: 0; color: inherit; }
+.timeline_item:hover a { background: 0; color: #00b37e; }
 .timeline_icon {
     position: absolute;
     left: -24px;
