@@ -3,7 +3,7 @@ body, html { font-family: 'Quicksand', sans-serif; background-color: #f3f8f1; }
 body { max-width: 800px; margin: 0 auto; padding: 0 7px; }
 
 /* the line below is a hack to get Chrome to render fonts decently */
-body { -webkit-text-stroke-width: 0.5px; }
+body { -webkit-text-stroke-width: 0.5px; padding-bottom: 40px; border-bottom: 5px solid #00b37e; }
 
 header { font-size: 200%; }
 
