@@ -52,13 +52,13 @@ a { color: #00b37e; text-decoration: none; padding: 1px 1px 2px; border-bottom: 
 .project_card p {
     margin: 5px 0;
     font-size: 18px;
-    color: #696969;
+    color: #333333;
 }
 p.project_card_subtitle {
     margin: 0 0 15px 87px;
     font-size: 1.3em;
     letter-spacing: -2px;
-    color: #333;
+    color: #111111;
 }
 
 
