@@ -7,16 +7,16 @@ body { -webkit-text-stroke-width: 0.5px; padding-bottom: 40px; border-bottom: 5p
 
 header { font-size: 200%; }
 
-h1 { font-size: 2.65em; font-weight: normal; letter-spacing: -1px; margin: -0.3em 0 0; padding: 0; }
+h1 { font-size: 2.4em; font-weight: normal; letter-spacing: -1px; margin: -0.3em 0 0; padding: 0; }
 
-h2 { font-size: 2.8em; font-weight: normal; margin-bottom: 0.2em; }
+h2 { font-size: 2.1em; font-weight: normal; margin-bottom: 0.2em; }
 
 a { color: #00b37e; text-decoration: none; padding: 1px 1px 2px; border-bottom: 1px solid #00dd9c; }
     a:hover { background-color: #ffffff; }
 
 .salutation { margin: 30px 0 0 0.12em; font-size: 1.3em; padding: 0; }
 
-.minibio { font-size: 1.45em; margin: -0.33em 0 0 0.1em; letter-spacing: -2px; padding-bottom: 1em; border-bottom: 1px solid #e3f4de; }
+.minibio { font-size: 1.45em; margin: -0.33em 0 0 0.1em; letter-spacing: -2px; padding-bottom: 0.4em; border-bottom: 1px solid #e3f4de; }
 
 .follow_me { font-size: 1.2em; }
 
@@ -84,7 +84,7 @@ p.project_card_subtitle {
     padding: 0 40px;
     margin: 25px 0; 
 }
-.timeline_item h3 a { border: 0; color: inherit; }
+.timeline_item h3 a { border: 0; color: inherit; color: #696969; }
 .timeline_item:hover a { background: 0; color: #00b37e; }
 .timeline_icon {
     position: absolute;
