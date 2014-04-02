@@ -32,6 +32,6 @@ end
 
 desc "Installs the required gems"
 task :first_time do
-    sh 'gem install rakefile'
+    sh 'gem install highline'
     sh 'gem install net-ssh'
 end
