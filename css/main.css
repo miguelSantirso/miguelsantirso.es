@@ -3,34 +3,33 @@ body, html { font-family: 'Quicksand', sans-serif; background-color: #f3f8f1; }
 body { max-width: 800px; margin: 0 auto; padding: 0 7px; }
 
 /* the line below is a hack to get Chrome to render fonts decently */
-body { -webkit-text-stroke-width: 0.5px; padding-bottom: 40px; border-bottom: 5px solid #00b37e; }
+/*body { -webkit-text-stroke-width: 0.5px; padding-bottom: 40px; border-bottom: 5px solid #00b37e; }*/
 
-header { font-size: 200%; }
+header { font-size: 130%; }
 
-h1 { font-size: 2.4em; font-weight: normal; letter-spacing: -1px; margin: -0.3em 0 0; padding: 0; }
+h1 { font-size: 2.4em; font-weight: normal; letter-spacing: -1px; margin: 0.3em 0 0; padding: 0; }
 
-h2 { font-size: 2.1em; font-weight: normal; margin-bottom: 0.2em; }
+h2 { font-size: 2.1em; font-weight: normal; margin: 0.65em 0 0.2em; }
 
 a { color: #00b37e; text-decoration: none; padding: 1px 1px 2px; border-bottom: 1px solid #00dd9c; }
     a:hover { background-color: #ffffff; }
 
 .salutation { margin: 30px 0 0 0.12em; font-size: 1.3em; padding: 0; }
 
-.minibio { font-size: 1.45em; margin: -0.33em 0 0 0.1em; letter-spacing: -2px; padding-bottom: 0.4em; border-bottom: 1px solid #e3f4de; }
+.minibio { font-size: 1.45em; margin: -0.33em 0 0 0.1em; letter-spacing: -2px; padding-bottom: 0.65em; border-bottom: 1px solid #bbb; }
 
-.follow_me { font-size: 1.2em; }
+.follow_me { margin: 0 0 1.5em; }
 
 /* project cards */
 
 .project_card {
     border-radius: 10px;
     max-width: 360px;
-    min-height: 96px;
+    min-height: 160px;
     margin: 0 10px 10px 0px;
     position: relative;
     padding: 14px 14px 8px;
-    background: #fdfffd;
-    box-shadow: 0 3px 10px #d5f6e0;
+    border: 1px solid #bbb;
     float: left;
     overflow: hidden;
 }
@@ -112,13 +111,13 @@ p.project_card_subtitle {
 @media (max-width: 690px) 
 {
     body { font-size: 95%; }
-    header { font-size: 140%; }
+    header { font-size: 100%; }
 }
 
 @media (max-width: 460px) 
 {
     body { font-size: 85%; }
-    header { font-size: 115%; }
+    header { font-size: 100%; }
     .project_card_icon { left: -14px; top: -4px; }
     .project_card h3 { margin-left: 55px; }
     p.project_card_subtitle { margin-left: 58px; }
