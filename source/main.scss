@@ -57,10 +57,10 @@ p { @extend .font-thin; font-size: 18px; color: $color-text; line-height: 1.4; }
 
 /* header */
 
-header { background: $color-accent; padding: 10px 0 17px; }
+header { padding: 10px 0 17px; border-bottom: 1px dashed $color-accent; }
 
 h1 { @extend .font-bold; margin: 0; line-height: 49px; font-size: 48px; }
-    h1 a { color: $color-background; text-decoration: none; }
+    h1 a { color: $color-accent; text-decoration: none; }
 
 #subtitle { @extend .font-light; font-size: 36px; color: $color-text; margin: -3px 0 0; text-transform: lowercase; line-height: normal; }
 
