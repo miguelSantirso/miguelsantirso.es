@@ -6,8 +6,17 @@ require 'yaml'
 $source = './source'
 $output = './htdocs'
 
+
+desc "Refreshes both HTML and CSS from files in #{$source}"
+task :refresh => [:html_refresh, :css_refresh]
+
 desc "Refreshes HTML in #{$output} from templates in #{$source}"
 task :html_refresh
+
+desc "Refreshes CSS in #{$output} from SCSS in #{$source}"
+task :css_refresh
+
+
 
 
 # Dynamically build the html -> [mustache, yml] dependecies
@@ -22,6 +31,19 @@ FileList.new("#{$source}/*.mustache").each do |mustache|
   end
   
   task :html_refresh => html
+end
+
+# Dynamically build the css -> [scss] dependecies
+FileList.new("#{$source}/*.scss").each do |scss|
+  
+  css = scss.gsub('.scss', '.css') # source/main.scss -> source/main.css
+  css[$source] = $output # source/main.css -> htdocs/main.css
+  
+  file css => [scss] do
+    compile_scss scss, css
+  end
+  
+  task :css_refresh => css
 end
 
 
@@ -40,6 +62,14 @@ def compile_mustache (mustache, yml, html)
   }
   
   File.write(html, Mustache.render(File.read(mustache), data))
+  
+end
+
+
+def compile_scss (scss, css)
+  
+  puts "sass style.scss style.css"
+  %x(sass #{scss} #{css} --scss --no-cache --style compressed)
   
 end
 
