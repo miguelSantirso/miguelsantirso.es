@@ -6,6 +6,13 @@ projects:
         desc: Football Maniacs is a casual football manager that features procedurally generated matches and highly customizable players.
     
     - project:
+        date: April<br/>28
+        title: Space Diggers — Ludum Dare (game jam)
+        one_line: true
+        url: http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=31847
+        desc: Very ambitious entry with multiplayer space exploration. It finished in 10th position overall and 4th position in graphics.
+    
+    - project:
         date: April<br/>3
         title: Tiny Thief “Bewitched” update published
         one_line: true
@@ -35,7 +42,6 @@ projects:
     - project:
         date: August<br/>26
         title: 10 Seconds To Live — Ludum Dare (game jam)
-        one_line: true
         url: http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&uid=26416
         desc: The game finished in 6th overall out of thousands of games.
     
@@ -64,4 +70,32 @@ projects:
         date: March<br/>24
         title: Racing Wings released on Xbox Live Indie Games
         url: http://marketplace.xbox.com/en-US/Product/Racing-Wings/66acd000-77fe-1000-9115-d80258550ad3
+    
+    - year: 2011
+    
+    - project:
+        date: November<br/>29
+        title: Air Race released for the web
+        one_line: true
+        url: http://www.addictinggames.com/sports-games/air-race-game.jsp
+        desc: Sponsored by Addicting Games, it was played by nearly 2 million players in a few months.
+    
+    - project:
+        date: January<br/>5
+        title: Finished my Master Thesis (Bienvisto)
+        one_line: true
+        url: http://miguelsantirso.es/bienvisto/quick-guide.html
+        desc: An ad-hoc network visualization tool developed as part of a research project in the University of Oslo.
+    
+    - year: the past
+    
+    - project:
+        title: Many small, amateur videogames and web apps... Too many to mention
+    
+    - year: 1998
+    
+    - project:
+        date: Can't'<br/>Remember
+        title: “Destripacoches” — Created my first videogame
+        desc: I just copied and pasted some code I found in a game programming book and learned to change its rules and graphics.
     
