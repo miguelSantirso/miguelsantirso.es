@@ -26,3 +26,9 @@ h1 { margin: 0; line-height: 49px; font-size: 48px; font-family: HelveticaNeue-L
     h1 a { color: #F8FFF2; text-decoration: none; }
 
 #subtitle { font-size: 36px; color: #333333; margin: -3px 0 0; font-family: HelveticaNeue-Light, sans-serif; text-transform: lowercase; line-height: normal; }
+
+
+/* footer */
+
+footer { border-top: 1px solid #64f000; margin-top: 40px; }
+    footer p { color: #777; margin: 3px 0 10px; font-size: 0.96em; text-align: center; }
