@@ -1,125 +1,18 @@
-body, html { font-family: 'Quicksand', sans-serif; background-color: #f3f8f1; }
+/**
+ * Fonts:
+ *  - Montserrat 700
+ *  - Roboto 100, 300, 500
+ */
 
-body { max-width: 800px; margin: 0 auto; padding: 0 7px; }
+body, html { margin: 0; padding: 0; }
 
-/* the line below is a hack to get Chrome to render fonts decently */
-/*body { -webkit-text-stroke-width: 0.5px; padding-bottom: 40px; border-bottom: 5px solid #00b37e; }*/
+.center_column { max-width: 900px; margin: 0 auto; padding: 0 38px; }
 
-header { font-size: 130%; }
+/* header */
 
-h1 { font-size: 2.4em; font-weight: normal; letter-spacing: -1px; margin: 0.3em 0 0; padding: 0; }
+header { background: #64F000; padding: 10px 0; }
 
-h2 { font-size: 2.1em; font-weight: normal; margin: 0.65em 0 0.2em; }
+h1 { margin: 0; font-size: 48px; font-family: 'Montserrat', sans-serif; }
+    h1 a { color: #F8FFF2; text-decoration: none; }
 
-a { color: #00b37e; text-decoration: none; padding: 1px 1px 2px; border-bottom: 1px solid #00dd9c; }
-    a:hover { background-color: #ffffff; }
-
-.salutation { margin: 30px 0 0 0.12em; font-size: 1.3em; padding: 0; }
-
-.minibio { font-size: 1.45em; margin: -0.33em 0 0 0.1em; letter-spacing: -2px; padding-bottom: 0.65em; border-bottom: 1px solid #bbb; }
-
-.follow_me { margin: 0 0 1.5em; }
-
-/* project cards */
-
-.project_card {
-    border-radius: 10px;
-    max-width: 360px;
-    min-height: 160px;
-    margin: 0 10px 10px 0px;
-    position: relative;
-    padding: 14px 14px 8px;
-    border: 1px solid #bbb;
-    float: left;
-    overflow: hidden;
-}
-.project_card_icon {
-    width: 80px; 
-    height:80px;
-    display: block;
-    border-radius: 40px;
-    position: absolute;
-    top: 8px; left: 9px;
-}
-.project_card h3 { 
-    font-size: 2.4em;
-    margin: 0 0 0 82px; 
-    font-weight: normal;
-    color: #00dd9c; 
-    letter-spacing: -2px; 
-}
-.project_card p {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #333333;
-}
-p.project_card_subtitle {
-    margin: 0 0 15px 87px;
-    font-size: 1.3em;
-    letter-spacing: -2px;
-    color: #111111;
-}
-
-
-/* timeline */
-
-.timeline {
-    margin-left: 1.6em;
-    margin-top: -10px;
-    border-left: 3px solid #ccc;
-}
-.timeline_separator { 
-    background: #f3f8f1; 
-    width: 100px; 
-    text-align: center;
-    margin: 0 0 0 -50px;
-    padding: 4px 0;
-    text-transform: uppercase;
-    font-size: 1.3em;
-}
-.timeline_item { 
-    position: relative;
-    min-height: 70px;
-    padding: 0 40px;
-    margin: 25px 0; 
-}
-.timeline_item h3 a { border: 0; color: inherit; color: #696969; }
-.timeline_item:hover a { background: 0; color: #00b37e; }
-.timeline_icon {
-    position: absolute;
-    left: -24px;
-    top: 7px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    border-radius: 100px;
-    border: 3px solid #f3f8f1;
-    background-position:center center;
-    transition: all 0.2s;
-}
-.timeline_item:hover .timeline_icon { width: 80px; height: 80px; left: -46px; top: -14px; transition: all 0.1s;  }
-.timeline_date { margin: 0; font-size: 1.1em; color: #696969; }
-.timeline h3 { margin: -0.2em 0 0; font-size: 1.6em; }
-
-/* media queries (tried to keep this as simple as possible) */
-
-@media (max-width: 815px) 
-{
-    .project_card { max-width:inherit; float: none; }
-}
-
-@media (max-width: 690px) 
-{
-    body { font-size: 95%; }
-    header { font-size: 100%; }
-}
-
-@media (max-width: 460px) 
-{
-    body { font-size: 85%; }
-    header { font-size: 100%; }
-    .project_card_icon { left: -14px; top: -4px; }
-    .project_card h3 { margin-left: 55px; }
-    p.project_card_subtitle { margin-left: 58px; }
-}
-
+#subtitle { font-size: 36px; color: #409900; line-height: 44px; margin: -8px 0 0; font-family: 'Roboto', sans-serif; font-weight: 100; text-transform: lowercase; }
