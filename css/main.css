@@ -1,7 +1,7 @@
 
 /* common styles */
 
-body, html { margin: 0; }
+body, html { margin: 0; background: #fafafa; }
 
 h2, h3, h4 { font-family: HelveticaNeue-Thin; font-weight: 100; }
     h2 { font-size: 36px; color: #333333; line-height: 44px; }
@@ -12,11 +12,13 @@ p { font-family: HelveticaNeue-Thin; font-size: 18px; color: #333; line-height: 
 
 .center_column { max-width: 580px; margin: 0 auto; padding: 0 38px; }
 
+
 /* content boxes */
 
 .content_box { padding: 6px 16px; margin: 25px 0; }
     .content_box h2 { border-bottom: 1px solid #64F000; margin: 0; padding: 0 0 3px; }
     .content_box.content_box_highlight { border: 1px solid #64f000; }
+
 
 /* header */
 
@@ -28,7 +30,24 @@ h1 { margin: 0; line-height: 49px; font-size: 48px; font-family: HelveticaNeue-L
 #subtitle { font-size: 36px; color: #333333; margin: -3px 0 0; font-family: HelveticaNeue-Light, sans-serif; text-transform: lowercase; line-height: normal; }
 
 
+/* timeline */
+
+#timeline_items { border-right: 1px solid #64fa00; min-height: 100px; width: 50%; }
+
+.timeline_item { position: relative; }
+
+.timeline_date { margin: 0; text-align: right; padding: 15px 20px 15px 0; line-height: 1; }
+    .timeline_date_year { font-family: HelveticaNeue-Medium; }
+
+.timeline_marker { background: #fafafa; border: 1px solid #64f000; border-radius: 15px; position: absolute;  width: 15px; height: 15px; top: 1.5em; right: -9px; }
+
+.timeline_item_content { margin-left: 110%; width: 90%; position: absolute; top: 1em; }
+    .timeline_item_content p { margin: 0; line-height: 100%; font-size: 16px; }
+    .timeline_item_content .timeline_item_title { font-family: HelveticaNeue-Medium; }
+
+
 /* footer */
 
 footer { border-top: 1px solid #64f000; margin-top: 40px; }
     footer p { color: #777; margin: 3px 0 10px; font-size: 0.96em; text-align: center; }
+
