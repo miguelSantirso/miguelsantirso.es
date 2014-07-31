@@ -4,7 +4,12 @@ require 'highline/import'
 require 'yaml'
 
 $source = './source'
+$static = './htdocs_static'
 $output = './htdocs'
+
+$remote_web_folder = '/home/miguelsantirso/miguelsantirso.es'
+$remote_hostname = 'pncil.com'
+$remote_user = 'miguelsantirso'
 
 
 desc "Refreshes both HTML and CSS from files in #{$source}"
@@ -16,6 +21,15 @@ task :html_refresh
 desc "Refreshes CSS in #{$output} from SCSS in #{$source}"
 task :css_refresh
 
+
+desc "Deploys the public web folder to a server"
+task :deploy => [:refresh] do
+  
+  mkdir_p $output, :verbose => false
+  FileUtils.cp_r(Dir.glob("#{$static}/*"), $output)
+  
+  %x(rsync -r -a -v --exclude-from deploy_exclude_list.txt -e ssh #{$output}/ #{$remote_user}@#{$remote_hostname}:#{$remote_web_folder})
+end
 
 
 
