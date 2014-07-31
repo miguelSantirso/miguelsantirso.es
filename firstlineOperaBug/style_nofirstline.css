@@ -1,5 +1,0 @@
-ul#blogMenu { list-style-type: none; margin: 0; padding: 10px 0 0; }
-	ul#blogMenu li { height: 32px; float: left; }
-		ul#blogMenu li a { display: block; padding: 10px 15px 8px; }
-
-	div.postTitle h2 a { padding: 2px 0 6px 0; display: block; }
