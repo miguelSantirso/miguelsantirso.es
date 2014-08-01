@@ -81,6 +81,11 @@ projects:
         desc: Sponsored by Addicting Games, it was played by nearly 2 million players in a few months.
     
     - project:
+        date: April<br>4
+        title: Joined 5 Ants
+        one_line: true
+    
+    - project:
         date: January<br/>5
         title: Finished my Master Thesis (Bienvisto)
         one_line: true
