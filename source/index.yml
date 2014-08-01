@@ -100,7 +100,7 @@ projects:
     - year: 1999
     
     - project:
-        date: Can't'<br/>Remember
+        date: Can't<br/>Remember
         title: “Destripacoches” — Created my first videogame
         desc: I just copied and pasted some code I found in a game programming book and learned to change its rules and graphics.
     
