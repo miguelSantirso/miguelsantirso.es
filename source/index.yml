@@ -42,6 +42,7 @@ projects:
     - project:
         date: August<br/>26
         title: 10 Seconds To Live — Ludum Dare (game jam)
+        one_line: true
         url: http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&uid=26416
         desc: The game finished in 6th overall out of thousands of games.
     
@@ -102,5 +103,6 @@ projects:
     - project:
         date: Can't<br/>Remember
         title: “Destripacoches” — Created my first videogame
+        one_line: true
         desc: I just copied and pasted some code I found in a game programming book and learned to change its rules and graphics.
     
