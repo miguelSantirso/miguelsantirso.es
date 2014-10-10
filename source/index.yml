@@ -1,5 +1,10 @@
 projects:
     - project:
+      date: October<br>13
+      title: Joined King
+      one_line: true
+
+    - project:
         date: June<br/>10
         title: Football Maniacs released on the App Store and Google play
         url: http://footballmaniacs.5ants.com
