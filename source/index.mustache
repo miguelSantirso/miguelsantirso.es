@@ -9,26 +9,26 @@
         <link rel="stylesheet" type="text/css" href="main.css" />
     </head>
     <body>
-        
+
         <header>
-            
+
             <div class="center_column">
-            
+
                 <h1><a href="http://twitter.com/mstirso"><span>@</span>mstirso</a></h1>
                 <p id="subtitle">Code, design, videogames.</p>
-                
+
             </div>
-            
+
         </header>
-        
+
         <main class="center_column">
-            
-            
+
+
             <!-- About Me section -->
-            
+
             <div class="content_box content_box_highlight">
                 <h2>About me</h2>
-                
+
                 <p>I am <a href="http://miguelsantirso.es" title="Miguel Santirso's Personal Website">Miguel Santirso</a>, a {{ dynamic.age }}-year-old videogame programmer and designer.</p>
 
                 <p>I have just joined <a href="https://king.com/">King</a> and I previously worked at <a href="http://5ants.com" title="5 Ants Official Website">5 Ants</a> where I led the programming of the highly successful game <a href="http://tinythief.com" title="Tiny Thief Official Website">Tiny Thief</a> and coordinated the final stages of the development of our second game <a href="http://footballmaniacs.5ants.com" title="Football Maniacs Official Website">Football Maniacs</a>.</p>
@@ -38,25 +38,25 @@
                 <p>I have always enjoyed learning new things and working with talented people to create new experiences.</p>
 
                 <p>Get in touch by <a href="mailto:tirso.00+contact@gmail.com">e-mail</a> or <a href="https://twitter.com/mstirso" title="Miguel Santirso on Twitter">twitter</a>.</p>
-                
+
             </div>
-            
-            
+
+
             <!-- Project Timeline -->
             <div class="content_box">
-            
+
                 <h2>Project Timeline</h2>
-                
+
                 <div id="timeline">
-                    
+
                     <div id="timeline_items">
-                        
+
                         <div class="timeline_item">
                             <p class="timeline_date timeline_date_year">today</p>
                         </div>
-                        
+
                         {{#projects}}
-                        
+
                         {{#project}}
                         <div class="timeline_item">
                             <p class="timeline_date">{{& date }}</p>
@@ -72,31 +72,31 @@
                             {{/desc}}
                         </div>
                         {{/project}}
-                        
+
                         {{#year}}
                         <div class="timeline_item">
                             <p class="timeline_date timeline_date_year">{{.}}</p>
                         </div>
                         {{/year}}
-                        
+
                         {{/projects}}
-                        
+
                         <div class="timeline_closer"></div>
-                        
+
                     </div>
-                    
+
                 </div>
-                
-            
+
+
         </main>
-        
+
         <footer>
-            
+
             <div class="center_column">
                 <p>Created with care by Miguel. Last updated {{ dynamic.last_updated }}</p>
             </div>
-            
+
         </footer>
-        
+
     </body>
 </html>
