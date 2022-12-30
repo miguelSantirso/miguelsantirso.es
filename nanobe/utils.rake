@@ -1,3 +1,5 @@
+require 'redcarpet'
+
 # Used to communicate with the ERB templates
 class NanobeErbBridge
 
@@ -12,7 +14,8 @@ class NanobeErbBridge
   end
 
   def md(text)
-    Kramdown::Document.new(text).to_html
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+    markdown.render(text)
   end
 
   def p(path)
@@ -23,7 +26,7 @@ class NanobeErbBridge
 
   def render_erb(path)
     content = File.read(File.expand_path(path)).force_encoding("UTF-8")
-    t = ERB.new(content, nil, '>')
+    t = ERB.new(content, trim_mode:'>')
     t.result(binding)
   end
 

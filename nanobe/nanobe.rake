@@ -1,3 +1,9 @@
+require 'date'
+require 'erb'
+require 'fileutils'
+require 'pathname'
+require 'yaml'
+
 # Configure these tasks in rakefile.rb
 
 desc "Refreshes both HTML and CSS from files in #{$source}"
@@ -11,7 +17,7 @@ task :css_refresh
 
 desc "Copies the files in #{$static} to #{$output}"
 task :static_refresh do
-  mkdir_p $output, :verbose => false
+  FileUtils.mkdir_p $output, :verbose => false
   FileUtils.cp_r(Dir.glob("#{$static}/*"), $output)
 end
 
@@ -23,7 +29,7 @@ end
 
 
 def compile_erb (erb, data, html)
-  mkdir_p File.dirname(html), :verbose => false
+  FileUtils.mkdir_p(File.dirname(html), :verbose => false)
 
   data = NanobeErbBridge.new(data)
   output_str = data.render_erb(erb)
@@ -64,7 +70,7 @@ end
 def load_yml yml_path
   yml_str = File.read(yml_path).force_encoding("UTF-8")
   yml_str = convert_markdown_blocks(yml_str)
-  return YAML.load(yml_str)
+  return YAML.load(yml_str, permitted_classes: [Date])
 end
 
 

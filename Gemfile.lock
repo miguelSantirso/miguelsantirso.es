@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    kramdown (1.5.0)
     rake (10.4.2)
+    redcarpet (3.5.1)
     sass (3.4.9)
 
 PLATFORMS
@@ -10,9 +10,9 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  kramdown
   rake
+  redcarpet
   sass
 
 BUNDLED WITH
-   2.2.4
+   2.4.1

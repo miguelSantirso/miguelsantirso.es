@@ -1,8 +1,3 @@
-require 'erb'
-require 'yaml'
-require 'kramdown'
-require 'pathname'
-
 $source = './source'
 $static = './source_static'
 $output = './output'
