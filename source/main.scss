@@ -1,29 +1,11 @@
 
-/* constants & reusable styles */
+/* constants */
 
-$font-stack: Helvetica, sans-serif;
-$color-background: #fafafa;
-$color-accent: #64fa00;
-$color-text: #333;
-$color-link: #000;
-$color-footer: #777;
+$color-background: black;
+$color-text: white;
+$color-accent: #00FFAA;
+$color-faded: #868686;
 
-.font-thin { 
-    font-family: HelveticaNeue-Thin, 'Helvetica Neue', HelveticaNeue, 'Calibri', sans-serif; 
-    font-weight: 100; 
-}
-.font-light { 
-    font-family: HelveticaNeue-Light, 'Helvetica Neue', HelveticaNeue, 'Calibri', sans-serif;
-    font-weight: 300; 
-}
-.font-medium { 
-    font-family: HelveticaNeue-Medium, 'Helvetica Neue', HelveticaNeue, 'Calibri Bold', sans-serif; 
-    font-weight: 500; 
-}
-.font-bold { 
-    font-family: 'Calibri Bold', HelveticaNeue-Bold, 'Helvetica Neue', HelveticaNeue, 'Calibri Bold', sans-serif; 
-    font-weight: 600; 
-}
 
 /* utils */
 
@@ -34,57 +16,100 @@ $color-footer: #777;
 }
 
 
-/* common styles */
+/* typography (https://type-scale.com/) */
 
-body, html { margin: 0; background: $color-background; }
+$scale: 1.25;
+@function pow($number, $exponent) {
+  $value: 1;
 
-h2, h3, h4 { @extend .font-thin; }
-    h2 { font-size: 36px; color: $color-text; line-height: 44px; }
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
 
-p { @extend .font-thin; font-size: 22px; letter-spacing: 0.01em; color: $color-text; line-height: 1.4; }
-    p a { @extend .font-medium; color: $color-link; text-decoration: none; }
-    p a:hover { border-bottom: 1px solid $color-link; }
+  @return $value;
+}
 
-.center_column { max-width: 630px; margin: 0 auto; padding: 0 38px; }
+@function font-scale($exponent) {
+  @return #{pow($scale, $exponent)}em;
+}
+
+html { font-size: 1.1em; }
+
+body { font-family: 'Work Sans', sans-serif; line-height: 1.4; }
+
+h1, h2, h3, h4 { margin: 1.414em 0 0.5em; line-height: 1.2; letter-spacing: -0.02em; }
+h1 { margin-top: 0; font-size: font-scale(4); }
+h2 { font-size: font-scale(3); }
+h3 { font-size: font-scale(2); }
+h4 { font-size: font-scale(1); }
+
+p { margin-bottom: 1.3em; }
 
 
-/* content boxes */
+/* styles */
 
-.content_box { padding: 6px 16px; margin: 25px 0; }
-    .content_box h2 { border-bottom: 1px solid $color-accent; margin: 0; padding: 0 0 3px; }
-    .content_box.content_box_highlight { border: 1px solid $color-accent; }
+.centered-fixed-width { max-width: 39em; margin: 0 auto; }
+
+body { background-color: $color-background; color: $color-text; }
+
+a { color: $color-accent; text-decoration: none; border-bottom: 2px solid transparent; }
+	a:hover { border-color: $color-accent; }
+
+header h1 { margin: 0.35em 0 0.15em; }
+	header h1 a { background-color: $color-text; color: $color-background; margin: 0 -8px; padding: 0 6px; }
+
+footer { color: $color-faded; font-size: 0.85em; margin-top: 1.414em*3; text-align: center; }
+
+#subtitle { margin-bottom: 0.5em; }
+  #subtitle p { font-size: 1.075em; font-weight: 500; margin: 0; }
+
+#bio p { margin: 0.08em; font-size: 0.85em; }
 
 
-/* header */
+/* blog */
 
-header { padding: 10px 0 17px; border-bottom: 1px dashed $color-accent; }
+.blogpost img { max-width: 100%; }
+.blogpost-date { margin: 1.414em 0 0; font-size: 0.85em; color: $color-faded; }
+.blogpost-title { margin-top: 0; }
 
-h1 { @extend .font-bold; margin: 0; line-height: 49px; font-size: 48px; }
-    h1 a { color: $color-accent; text-decoration: none; }
+/* featured items */
 
-#subtitle { @extend .font-light; font-size: 36px; color: $color-text; margin: -3px 0 0; text-transform: lowercase; line-height: normal; }
-
+#featured-items { display: flex; flex-wrap: wrap; max-width: 48em; margin: 0 auto; }
+  .featured-item { width: 6em; margin: 0.5em 1em; }
+    .featured-item a:hover { border: 0; }
+    .featured-item img { width: 100%; }
+    .featured-item p { text-align: center; margin: 0; font-size: 0.85em; }
 
 /* timeline */
 
-#timeline_items { border-left: 1px solid $color-accent; min-height: 100px; width: 65%; margin: 0 0 0 35%; }
+#timeline h2 { margin-bottom: 0.25em; }
 
-.timeline_item { position: relative; margin: 0 0 15px; padding: 8px 0; min-height: 25px; }
+#timeline-items { margin: 0 0 0 128px; }
 
-.timeline_date { position: absolute; width: 100px; text-align: right; margin: 1px 0 0 -118px; line-height: 1; font-size: 18px; }
-    .timeline_date_year { @extend .font-medium; margin-top: 0; }
+.timeline-item { position: relative; margin: 0 0 12px; padding: 8px 0; min-height: 25px; }
 
-.timeline_marker { @include circle(15px); background: $color-background; border: 1px solid $color-accent; position: absolute; top: 18px; left: -9px; font-size: 16px; }
+.timeline-date { position: absolute; width: 100px; text-align: right; margin: 1px 0 0 -118px; font-size: 0.85em; color: $color-faded; line-height: 1; }
+    .timeline-date-year { color: $color-text; font-size: font-scale(1); font-weight: bold; margin-top: 0; }
+
+.timeline-marker { @include circle(12px); background: $color-accent; position: absolute; top: 12px; left: -6px; }
+
+p.timeline-item-content { margin: 0 0 10px 17px; font-size: 0.85em; line-height: 1.15em; }
+p.timeline-item-title { font-size: font-scale(0); font-weight: bold; margin-bottom: 5px; }
+
+.timeline-closer { @include circle(7px); background: $color-accent; position: absolute; margin-left: -4px; margin-top: -15px; }
 
 
-p.timeline_item_content { margin: 0 0 10px 19px; line-height: 100%; font-size: 14px; @extend .font-light;line-height: 1.15em; }
-p.timeline_item_title { @extend .font-medium; font-size: 16px; }
-p.timeline_item_title_oneline { margin-top: 0.5em; }
+/* game item */
 
-.timeline_closer { @include circle(7px); background: $color-accent; position: absolute; margin-left: -4px; margin-top: -15px; }
+.game_item { margin: 1.414em auto; display: grid; grid-template-columns: 180px max-content; grid-gap: 20px; }
+  .game_item h3 { margin: 20px 0 0px; }
+.game_description { margin: 5px 0 20px; }
 
-/* footer */
 
-footer { border-top: 1px solid $color-accent; margin-top: 40px; }
-    footer p { color: $color-footer; margin: 3px 0 10px; font-size: 0.96em; text-align: center; }
+/* media queries */
 
+@media (max-width: 630px) {
+    #timeline-items { margin-left: 95px; }
+}

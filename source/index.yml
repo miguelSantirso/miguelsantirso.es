@@ -1,8 +1,128 @@
+nb_template: /template.html
+nb_layout: /index.html
+
+subtitle: Studio Manager/Game Lead at [Voodoo](https://www.voodoo.io).
+
+bio: |
+Previously at [King](http://king.com) (Candy Crush Soda, Diamond Diaries Saga, etc.) and [5 Ants](https://twitter.com/5ants) ([Tiny Thief](https://twitter.com/TinyThiefGame), [Football Maniacs](https://twitter.com/FBManiacs), [BoomBang](https://twitter.com/boombang)).
+
+|||||
+
 projects:
+    - year: 2021
+
     - project:
-      date: October<br>13
-      title: Joined King
-      one_line: true
+        date: May<br/>3
+        title: Game Lead at Voodoo
+        url: https://www.voodoo.io
+        desc: Managing a small studio at Voodoo to find the next casual hit.
+
+    - project:
+        date: January
+        title: Noto &mdash; A chat with your second brain
+        url: https://noto.one
+        desc: Started development for this productivity app that combines note-taking, to-dos and agenda in a simple yet powerful way.
+        featured_title: Noto
+        featured_img: img/featured/noto.png
+
+    - year: 2020
+
+    - project:
+        date: All year
+        title: Senior Producer at Candy Crush Soda Saga
+        url: https://www.king.com/es/game/candycrushsoda
+        desc: Leading Product and production for one of the three pods (~30 people) working on feature development.
+        featured_title: Candy Crush Soda Saga
+        featured_img: img/featured/soda.png
+
+    - year: 2019
+
+    - project:
+        date: December<br/>29
+        title: Infinicut
+        url: https://tirso.itch.io/infinicut
+        desc: Another free minigame, trying to convert an "Oddly Satisfying" GIF into a playable experience.
+        featured_img: img/featured/infinicut.png
+
+    - project:
+        date: October<br/>1
+        title: Hungry Raccoon
+        url: https://tirso.itch.io/hungry-raccoon
+        desc: Help a super Hungry Raccoon in its sandwich-stealing adventure. Careful with the food police!
+        featured_img: img/featured/raccoon.png
+
+    - project:
+        date: September<br/>8
+        title: Don't Get Caught
+        url: https://tirso.itch.io/dont-get-caught
+        desc: Small but fun game about running for balloons and not getting caught.
+        featured_img: img/featured/dontgetcaught.png
+
+    - project:
+        date: All year
+        title: Principal Engineer at Candy Crush Soda Saga
+        desc: Leading a team of up to 16 developers working for Candy Crush Soda Saga.
+
+    - year: 2018
+
+    - project:
+        date: October<br/>14
+        title: "Dots: Personal Productivity"
+        url: https://itunes.apple.com/us/app/dots-personal-productivity/id1313170631?mt=8
+        desc: iOS app I created to learn Swift and native iOS development.
+        featured_img: img/featured/dots.png
+        featured_title: Dots
+
+    - project:
+        date: July<br/>5
+        title: Diamond Diaries Saga
+        url: https://king.com/es/game/diamonddiaries
+        desc: Physic based puzzle game that taught me how hard it is to innovate while keeping it appealing for an immensely diverse audience.
+        featured_img: img/featured/dds.png
+
+    - project:
+        date: January<br/>13
+        title: La Última Flor de Lazlar
+        url: https://tirso.itch.io/la-ultima-flor-de-lazlar
+        desc: Immersive adventure in the form of a short story (spanish only).
+        featured_img: img/featured/lazlar.png
+
+    - year: 2016
+
+    - project:
+        date: December<br/>25
+        title: SHΔPE - Geometric flow
+        url: https://twitter.com/mstirso/status/802465907905859584
+        desc: Breath, relax, defocus your eyes and dive deep into your flow state with this game.
+        featured_img: img/featured/shape.png
+        featured_title: SHΔPE
+
+    - project:
+        date: March<br/>17
+        title: SHΔPE &mdash; Ludum Dare (game compo)
+        url: http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=26416
+        desc: Developed in 8-9 hours for the Ludum Dare compo.
+
+    - project:
+        date: February<br/>2
+        title: Pulso (for two)
+        url: https://twitter.com/mstirso/status/698530287211388928
+        desc: Quick challenges for two players in the same device.
+        featured_img: img/featured/pulso.png
+
+    - year: 2015
+
+    - project:
+        date: March<br/>26
+        title: Dr. Noid released on the App Store
+        url: http://pncil.com/dr_noid_presskit.html
+        desc: Attempt to bring a fresh, high-quality breakout game to iOS.
+
+    - year: 2014
+
+    - project:
+        date: October<br>13
+        title: Joined King
 
     - project:
         date: June<br/>10
@@ -12,55 +132,51 @@ projects:
 
     - project:
         date: April<br/>28
-        title: Space Diggers — Ludum Dare (game jam)
-        one_line: true
+        title: Space Diggers &mdash; Ludum Dare (game jam)
         url: http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=31847
         desc: Very ambitious entry with multiplayer space exploration. It finished in 10th position overall and 4th position in graphics.
 
     - project:
         date: April<br/>3
-        title: Tiny Thief “Bewitched” update published
-        one_line: true
-        url: http://tinythief.com
+        title: Tiny Thief &ldquo;Bewitched&rdquo; update published
+        url: https://www.youtube.com/watch?v=k0Js6eHypgQ
         desc: Five new levels published as a paid update for the game Tiny Thief.
 
-    - year: 2014
+    - year: 2013
 
     - project:
         date: December<br/>27
-        title: Tiny Thief selected by Apple for the “12 Days of Gifts” promotion
+        title: Tiny Thief selected by Apple for the &ldquo;12 Days of Gifts&rdquo; promotion
         desc: Game distributed to over 7 million iOS devices in just one day
 
     - project:
         date: December<br/>21
         title: Tiny Thief released on Steam
-        one_line: true
-        url: http://store.steampowered.com/app/257080/
+        url: https://www.youtube.com/watch?v=x-hV0RaqcGI
 
     - project:
         date: December<br/>18
-        title: One Arrow — Ludum Dare (game jam)
-        one_line: true
+        title: One Arrow &mdash; Ludum Dare (game jam)
         url: http://www.ludumdare.com/compo/ludum-dare-28/?action=preview&uid=31847
         desc: The game finished in 4th pos in graphics and 28th in overall.
 
     - project:
         date: August<br/>26
-        title: 10 Seconds To Live — Ludum Dare (game jam)
-        one_line: true
+        title: 10 Seconds To Live &mdash; Ludum Dare (game jam)
         url: http://www.ludumdare.com/compo/ludum-dare-27/?action=preview&uid=26416
         desc: The game finished in 6th overall out of thousands of games.
 
     - project:
         date: July<br/>11
         title: Tiny Thief released on App Store and Google Play
-        url: http://tinythief.com
+        url: https://www.youtube.com/watch?v=x-hV0RaqcGI
         desc: Published by Rovio Stars, it has been recognised as one of the best mobile, premium games of 2013.
+        featured_img: img/featured/tinythief.png
+        featured_title: Tiny Thief
 
     - project:
         date: July<br/>2
         title: Racing Wings released on the App Store
-        one_line: true
         url: https://itunes.apple.com/us/app/racing-wings/id630107990?mt=8
         desc: A simple air racing game made in my free time. It was a great opportunity to learn about the App Store and native development.
 
@@ -69,7 +185,6 @@ projects:
     - project:
         date: October<br/>21
         title: Racing Wings released on Google Play
-        one_line: true
         url: https://play.google.com/store/apps/details?id=com.pncil.airrace
 
     - project:
@@ -82,19 +197,16 @@ projects:
     - project:
         date: November<br/>29
         title: Air Race released for the web
-        one_line: true
         url: http://www.addictinggames.com/sports-games/air-race-game.jsp
         desc: Sponsored by Addicting Games, it was played by nearly 2 million players in a few months.
 
     - project:
         date: April<br>4
         title: Joined 5 Ants
-        one_line: true
 
     - project:
         date: January<br/>5
         title: Finished my Master Thesis (Bienvisto)
-        one_line: true
         url: http://miguelsantirso.es/bienvisto/quick-guide.html
         desc: An ad-hoc network visualization tool developed as part of a research project in the University of Oslo.
 
@@ -107,6 +219,5 @@ projects:
 
     - project:
         date: Can't<br/>Remember
-        title: “Destripacoches” — Created my first videogame
-        one_line: true
+        title: Destripacoches &mdash; Created my first videogame
         desc: I just copied and pasted some code I found in a game programming book and learned to change its rules and graphics.

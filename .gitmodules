@@ -1,0 +1,3 @@
+[submodule "nanobe"]
+	path = nanobe
+	url = git@bitbucket.org:miguelSantirso/nanobe.git

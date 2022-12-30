@@ -1,0 +1,32 @@
+nb_template: /template.html
+nb_layout: /blog/blogpost.html
+
+date: 2018-02-23
+title: "A simple erosion effect I used in La Última Flor de Lazlar (Unity shader inside)"
+content: |
+After my last [tutorial on revealing texts better](/blog/revealing-text-better.html), some people asked about the effect I use to reveal images in [La Última Flor de Lazlar](https://www.youtube.com/watch?v=Zaydct0AVXM). It's an effect that tries to evoke painting with a brush:
+
+![sample]
+
+It is a super simple effect that uses a second texture to control how the first one should be revealed.
+
+This extra texture has a specific gradient, from white to black, and the shader decides the alpha of each pixel in the output based on the darkness of the equivalent pixel in the extra texture.
+
+A GIF is worth a thousand words:
+
+![explanation]
+
+In the top-right image, the red pixels mark the threshold between the visible and invisible parts of the output image. There is a "softness" parameter that controls how hard or soft that edge should be.
+
+As you can see, this shader is super flexible and can create very different effects depending on what you do with your second texture!
+
+Here's a link to the shader, feel free to modify it and tell me if you improve it! :P
+
+[Erosion shader used in La Última Flor de Lazlar](https://gist.github.com/miguelSantirso/00befcf630ea2d528f29439102d3867f)
+
+I wrote this shader over a year ago and I have learned much more about visual effects in the last months. I want to share but it takes a lot of time and motivation to prepare these posts. [Follow me on Twitter](https://twitter.com/mstirso) and tell me something if you like what I write, that helps a lot :)
+
+[sample]: ../img/blog/erosion-lazlar-sample.gif
+[explanation]: ../img/blog/erosion-lazlar-explanation.gif
+
+||||

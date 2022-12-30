@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>La Última Flor de Lazlar - Referencia de sonidos</title>
+  <meta name="description" content="La Última Flor de Lazlar - Referencia de sonidos" />
+</head>
+
+<body>
+	<h1>La Última Flor de Lazlar - Referencia de sonidos</h1>
+
+	<p>Esta es la lista de sonidos utilizados en el juego La Última Flor de Lazlar:</p>
+
+	<ul>
+		<% @sounds.each do |s| %>
+			<li><%= s['title'] %>: <a href="<%= s['url'] %>"><%= s['url'] %></a></li>
+		<% end %>
+	</ul>
+
+</body>
+
+</html>

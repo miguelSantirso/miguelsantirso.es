@@ -1,0 +1,9 @@
+<main class="center_column">
+
+  <div class="blogpost centered-fixed-width">
+
+  	<p class="blogpost-date"><%= @date.strftime('%b %e, %Y') %></p>
+    <h2 class="blogpost-title"><%= @title %></h2>
+    <%= md(@content) %>
+
+</main>
