@@ -37,9 +37,9 @@ $scale: 1.25;
 
 html { font-size: 1.1em; }
 
-body { font-family: 'Work Sans', sans-serif; line-height: 1.4; }
+body { font-family: "Inter", sans-serif; line-height: 1.4; }
 
-h1, h2, h3, h4 { margin: 1.414em 0 0.5em; line-height: 1.2; letter-spacing: -0.02em; }
+h1, h2, h3, h4 { font-family: 'EB Garamond', serif; margin: 1.414em 0 0.5em; line-height: 1.2; font-weight: 400; }
 h1 { margin-top: 0; font-size: font-scale(4); }
 h2 { font-size: font-scale(3); }
 h3 { font-size: font-scale(2); }
