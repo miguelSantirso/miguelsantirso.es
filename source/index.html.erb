@@ -1,0 +1,57 @@
+<r-grid id="title" columns=6 columns-s="3">
+
+  <r-cell span="3"><img src="img/name.png" alt="Miguel Santirso" /></r-cell>
+
+  <r-cell span="3"><%= md(@bio) %></r-cell>
+
+</r-grid>
+
+<r-grid columns=6 columns-m=4 columns-s=2>
+  <r-cell span="row"><h2>Notable Work</h2></r-cell>
+
+  <% @notable_work.each do |w| %>
+    <% if work=w['work'] %>
+      <r-cell span=2>
+        <r-grid columns=8 class="compact icn_description_cell">
+          <r-cell span=2><img src="<%= work['img'] %>" /></r-cell>
+          <r-cell span=6>
+          <p class="text_small"><%= work['dates'] %></p>
+          <p><b>
+          <% if url= work[ 'url'] then %><a href="<%= url %>"><%= work['title'] %></a>
+          <% else %>
+          <%= work['title'] %>
+          <% end %>
+          </b></p>
+          <p class="text_small"><%= work['desc'] %></p>
+          </r-cell>
+        </r-grid>
+      </r-cell>
+    <% end %>
+  <% end %>
+
+</r-grid>
+
+<r-grid columns=6 columns-m=4 columns-s=2>
+  <r-cell span="row"><h2>Personal Projects</h2></r-cell>
+
+  <% @personal_projects.each do |p| %>
+    <% if project=p['project'] %>
+      <r-cell span=2>
+        <r-grid columns=8 class="compact icn_description_cell">
+          <r-cell span=2><img src="<%= project['img'] %>" /></r-cell>
+          <r-cell span=6>
+          <p class="text_small"><%= project['dates'] %></p>
+          <p><b>
+          <% if url= project[ 'url'] then %><a href="<%= url %>"><%= project['title'] %></a>
+          <% else %>
+          <%= project['title'] %>
+          <% end %>
+          </b></p>
+          <p class="text_small"><%= project['desc'] %></p>
+          </r-cell>
+        </r-grid>
+      </r-cell>
+    <% end %>
+  <% end %>
+
+</r-grid>

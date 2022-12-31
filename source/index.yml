@@ -1,2 +1,100 @@
 nb_template: /template.html
 nb_layout: /index.html
+
+bio: |
+I am a Spanish engineer and product designer with more than two decades dedicated to the craft of games and apps development.
+
+Currently working for [Voodoo](https://www.voodoo.io/) as Studio Director.
+|||||
+
+notable_work:
+    - work:
+        dates: 2021→Present
+        title: Mob Control
+        desc: Studio Director in Voodoo's defining project for its new "hybrid-casual" strategy.
+        img: img/featured/moc.png
+
+    - work:
+        dates: 2019→2021
+        title: Candy Crush Soda Saga
+        desc: Technical Lead first, then Product Lead at the Barcelona pod (~30 people).
+        img: img/featured/soda.png
+        url: https://www.king.com/es/game/candycrushsoda
+
+    - work:
+        dates: 2018
+        title: Diamond Diaries Saga
+        desc: Technical Lead. Physics-based puzzle with an emphasis on creative level design and satisfying visuals.
+        img: img/featured/dds.png
+        url: https://king.com/es/game/diamonddiaries
+
+    - work:
+        dates: 2013
+        title: Tiny Thief
+        desc: Published by Rovio Stars, it has been recognised as one of the best mobile, premium games of 2013.
+        img: img/featured/tinythief.png
+        url: https://www.youtube.com/watch?v=x-hV0RaqcGI
+
+    - work:
+        dates: 2011
+        title: Bienvisto
+        desc: An ad-hoc network visualization tool developed as part of a research project in the University of Oslo.
+        img: img/featured/bienvisto.png
+        url: http://miguelsantirso.es/bienvisto/quick-guide.html
+
+personal_projects:
+    - project:
+        dates: 2021
+        title: Noto – Notes & To-Dos
+        desc: The fastest note-taking app, with support for connected notes (Zettelkasten) and smart categories.
+        img: img/featured/noto.png
+        url: https://noto.one/
+
+    - project:
+        dates: 2019
+        title: Infinicut
+        desc: Another free minigame, trying to convert an "Oddly Satisfying" GIF into a playable experience.
+        img: img/featured/infinicut.png
+        url: https://tirso.itch.io/infinicut
+
+    - project:
+        dates: 2019
+        title: Hungry Raccoon
+        desc: Help a super Hungry Raccoon in its sandwich-stealing adventure. Careful with the food police!
+        img: img/featured/raccoon.png
+        url: https://tirso.itch.io/hungry-raccoon
+
+    - project:
+        dates: 2019
+        title: Don't Get Caught
+        desc: Hypercasual, fun game about running for balloons and not getting caught.
+        img: img/featured/dontgetcaught.png
+        url: https://tirso.itch.io/dont-get-caught
+
+    - project:
+        dates: 2018
+        title: "Dots: Personal Productivity"
+        desc: iOS app I created to learn Swift and native iOS development.
+        img: img/featured/dots.png
+        url: https://itunes.apple.com/us/app/dots-personal-productivity/id1313170631?mt=8
+
+    - project:
+        dates: 2018
+        title: La Última Flor de Lazlar
+        desc: Immersive adventure in the form of a short story (spanish only).
+        img: img/featured/lazlar.png
+        url: https://tirso.itch.io/la-ultima-flor-de-lazlar
+        
+    - project:
+        dates: 2016
+        title: SHΔPE - Geometric flow
+        desc: Breath, relax, defocus your eyes and dive deep into your flow state with this game.
+        img: img/featured/shape.png
+        url: https://tirso.itch.io/shpe
+
+    - project:
+        dates: 2016
+        title: Pulso (for two)
+        desc: Quick challenges for two players in the same device.
+        img: img/featured/pulso.png
+        url: https://tirso.itch.io/pulso
