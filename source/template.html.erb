@@ -7,21 +7,15 @@
   <title>Miguel Santirso &mdash; <%= title %></title>
   <meta name="description" content="Miguel Santirso - <%= title %>" />
   <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="<%= p('raster.grid.css') %>" />
   <link rel="stylesheet" type="text/css" href="<%= p('main.css') %>" />
 </head>
 
 <body>
 
-  <header class="centered-fixed-width">
-    <h1><a href="http://miguelsantirso.es">Miguel Santirso</a></h1>
-  </header>
-
   <%= render_erb(@nb_layout) %>
 
-  <footer>
-    <p>Created with care by Miguel. Last updated <%= Time.now().strftime("%B %e, %Y") %></p>
-  </footer>
+  <p id="footer" class="text_small">Created with care by Miguel. Last updated <%= Time.now().strftime("%B %e, %Y") %></p>
 
 </body>
 

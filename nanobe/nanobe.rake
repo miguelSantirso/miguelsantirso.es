@@ -6,14 +6,11 @@ require 'yaml'
 
 # Configure these tasks in rakefile.rb
 
-desc "Refreshes both HTML and CSS from files in #{$source}"
-task :refresh => [:html_refresh, :css_refresh, :static_refresh]
+desc "Refreshes HTML from files in #{$source}"
+task :refresh => [:html_refresh, :static_refresh]
 
 desc "Refreshes HTML in #{$output} from templates in #{$source}"
 task :html_refresh => [:html_refresh_internal]
-
-desc "Refreshes CSS in #{$output} from SCSS in #{$source}"
-task :css_refresh
 
 desc "Copies the files in #{$static} to #{$output}"
 task :static_refresh do
@@ -34,13 +31,6 @@ def compile_erb (erb, data, html)
   data = NanobeErbBridge.new(data)
   output_str = data.render_erb(erb)
   File.write(html, output_str)
-end
-
-
-def compile_scss (scss, css)
-  puts "sass style.scss = style.css"
-
-  %x(sass #{scss} #{css} --scss --no-cache --style compressed)
 end
 
 
@@ -107,16 +97,4 @@ task :html_refresh_internal do
       compile_erb(erb, yml, html)
     end
   end
-end
-
-# Dynamically build the css -> [scss] dependencies and tasks
-FileList.new("#{$source}/*.scss").each do |scss|
-  css = scss.gsub('.scss', '.css') # source/main.scss -> source/main.css
-  css[$source] = $output # source/main.css -> htdocs/main.css
-
-  file css => [scss] do
-    compile_scss scss, css
-  end
-
-  task :css_refresh => css
 end

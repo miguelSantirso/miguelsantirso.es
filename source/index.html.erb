@@ -1,63 +1,57 @@
+<r-grid id="title" columns=6 columns-s="3">
 
-<div id="subtitle" class="centered-fixed-width">
-  <%= md(@subtitle) %>
-</div>
+  <r-cell span="3"><img src="img/name.png" alt="Miguel Santirso" /></r-cell>
 
-  <div id="bio" class="centered-fixed-width">
-    <%= md(@bio) %>
-  </div>
+  <r-cell span="3"><%= md(@bio) %></r-cell>
 
-  <div id="featured">
-    <div class="centered-fixed-width">
-      <h2>Featured Projects</h2>
-    </div>
+</r-grid>
 
-    <div id="featured-items">
-      <% @projects.select{|p| p['project'] && p['project']['featured_img']}.map{|p| p['project']}.each do |project| %>
+<r-grid columns=6 columns-m=4 columns-s=2>
+  <r-cell span="row"><h2>Notable Work</h2></r-cell>
 
-      <div class="featured-item">
-        <a href="<%= project['url'] %>"><img src="<%= project['featured_img'] %>" /></a>
-        <a href="<%= project['url'] %>"><p><%= project['featured_title'] || project['title'] %></p></a>
-      </div>
-      <% end %>  
-    </div>
-    
-  </div>
+  <% @notable_work.each do |w| %>
+    <% if work=w['work'] %>
+      <r-cell span=2>
+        <r-grid columns=8 class="compact icn_description_cell">
+          <r-cell span=2><img src="<%= work['img'] %>" /></r-cell>
+          <r-cell span=6>
+          <p class="text_small"><%= work['dates'] %></p>
+          <p><b>
+          <% if url= work[ 'url'] then %><a href="<%= url %>"><%= work['title'] %></a>
+          <% else %>
+          <%= work['title'] %>
+          <% end %>
+          </b></p>
+          <p class="text_small"><%= work['desc'] %></p>
+          </r-cell>
+        </r-grid>
+      </r-cell>
+    <% end %>
+  <% end %>
 
-  <div id="timeline" class="centered-fixed-width">
+</r-grid>
 
-    <h2>Project Timeline</h2>
+<r-grid columns=6 columns-m=4 columns-s=2>
+  <r-cell span="row"><h2>Personal Projects</h2></r-cell>
 
-    <div id="timeline-items">
-
-      <% @projects.each do |p| %>
-
-      <% if year= p['year'] %>
-      <div class="timeline-item">
-        <p class="timeline-date timeline-date-year"><%= year %></p>
-      </div>
-      <% end %>
-
-      <% if project= p['project'] %>
-      <div class="timeline-item">
-        <p class="timeline-date"><%= project['date'] %></p>
-        <span class="timeline-marker"></span>
-        <p class="timeline-item-content timeline-item-title">
+  <% @personal_projects.each do |p| %>
+    <% if project=p['project'] %>
+      <r-cell span=2>
+        <r-grid columns=8 class="compact icn_description_cell">
+          <r-cell span=2><img src="<%= project['img'] %>" /></r-cell>
+          <r-cell span=6>
+          <p class="text_small"><%= project['dates'] %></p>
+          <p><b>
           <% if url= project[ 'url'] then %><a href="<%= url %>"><%= project['title'] %></a>
           <% else %>
           <%= project['title'] %>
           <% end %>
-        </p>
-        <% if desc= project['desc'] %>
-        <p class="timeline-item-content"><%= desc %></p>
-        <% end %>
-      </div>
-      <% end %>
+          </b></p>
+          <p class="text_small"><%= project['desc'] %></p>
+          </r-cell>
+        </r-grid>
+      </r-cell>
+    <% end %>
+  <% end %>
 
-      <% end %>
-
-      <div class="timeline-closer"></div>
-
-    </div> <!-- timeline items -->
-
-  </div> <!-- timeline -->
+</r-grid>

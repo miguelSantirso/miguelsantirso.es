@@ -1,0 +1,69 @@
+
+/* typography (https://type-scale.com/) */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap');
+
+html {font-size: 125%;} /*20px*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.074rem;}
+
+h3 {font-size: 1.728rem;}
+
+h4 {font-size: 1.44rem;}
+
+h5 {font-size: 1.2rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+
+/* styles */ 
+
+body { background-color: #fbfefb; }
+
+b { font-weight: bold; }
+
+r-grid { column-gap: 2rem; }
+    r-grid.compact { column-gap: 1rem; }
+
+body { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+#footer { text-align: center; margin-top: 3rem; }
+
+#title { align-items: center; min-height: 10rem; margin-top: 4rem; }
+
+a { color: #273E0A; }
+
+.icn_description_cell { margin-bottom: 2rem; }
+    .icn_description_cell p { margin: 0.15rem 0 0; line-height: 1.5; }
+    .icn_description_cell img { width: 100%; }
+
+@media only screen and (min-width: 601px) and (max-width: 890px) {
+    r-grid[columns-m="1"] { --grid-tc: repeat(1, 1fr) }
+    r-grid[columns-m="2"] { --grid-tc: repeat(2, 1fr) }
+    r-grid[columns-m="3"] { --grid-tc: repeat(3, 1fr) }
+    r-grid[columns-m="4"] { --grid-tc: repeat(4, 1fr) }
+    r-grid[columns-m="5"] { --grid-tc: repeat(5, 1fr) }
+    r-grid[columns-m="6"] { --grid-tc: repeat(6, 1fr) }
+    r-grid[columns-m="7"] { --grid-tc: repeat(7, 1fr) }
+    r-grid[columns-m="8"] { --grid-tc: repeat(8, 1fr) }
+}
