@@ -3,7 +3,6 @@ GEM
   specs:
     rake (10.4.2)
     redcarpet (3.5.1)
-    sass (3.4.9)
 
 PLATFORMS
   ruby
@@ -13,7 +12,6 @@ PLATFORMS
 DEPENDENCIES
   rake
   redcarpet
-  sass
 
 BUNDLED WITH
    2.4.1

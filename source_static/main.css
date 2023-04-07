@@ -67,3 +67,8 @@ a { color: #273E0A; }
     r-grid[columns-m="7"] { --grid-tc: repeat(7, 1fr) }
     r-grid[columns-m="8"] { --grid-tc: repeat(8, 1fr) }
 }
+
+/* articles */
+
+.abstract { color: #74786f; font-size: 0.8rem; }
+  .abstract-date { color: black; }

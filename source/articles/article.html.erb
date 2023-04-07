@@ -1,0 +1,11 @@
+<r-grid columns=6 columns-s=3>
+    <r-cell span="3"><img src="../img/name.png" alt="Miguel Santirso" /></r-cell>
+    <r-cell span="3" class="abstract"><span class="abstract-date"><%= @date.strftime('%B %d, %Y') %></span> / <%= @abstract %></r-cell>
+</r-grid>
+
+<r-grid class="long-text">
+<h2 span="row"><%= @title %></h2>
+
+<r-cell span="row"><%= md(@content) %></r-cell>
+
+</r-grid>

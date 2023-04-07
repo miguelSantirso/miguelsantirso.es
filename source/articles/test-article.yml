@@ -1,0 +1,12 @@
+nb_template: /template.html
+nb_layout: /articles/article.html
+
+date: 2023-04-07
+abstract: This test article is designed to test the layout for the articles template in this website.
+title: Test Article
+
+content: |
+I am a Spanish engineer and product designer with more than two decades dedicated to the craft of games and apps development.
+
+Currently working for [Voodoo](https://www.voodoo.io/) as Studio Director.
+|||||
