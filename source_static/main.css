@@ -70,5 +70,10 @@ a { color: #273E0A; }
 
 /* articles */
 
+.header { align-items: center; }
+  .header img { vertical-align: middle; width: 100%; margin-top: 6%; }
+
 .abstract { color: #74786f; font-size: 0.8rem; }
   .abstract-date { color: black; }
+
+.long-text { max-width: 42rem; margin: 0 auto; }
