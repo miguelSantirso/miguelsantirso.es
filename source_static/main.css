@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap');
 
 html { font-size: 125%; } /*20px*/
-@media only screen and (max-width: 601px) {
-  .html { font-size: 100%; }
-  .body { padding: 0.5rem; }
+@media only screen and (max-width: 768px) {
+  html { font-size: 100%; }
+  body { padding: 0.5rem; }
 }
 
 body {
@@ -61,7 +61,7 @@ a { color: #273E0A; }
     .icn_description_cell p { margin: 0.15rem 0 0; line-height: 1.5; }
     .icn_description_cell img { width: 100%; }
 
-@media only screen and (min-width: 601px) and (max-width: 890px) {
+@media only screen and (min-width: 768px) and (max-width: 890px) {
     r-grid[columns-m="1"] { --grid-tc: repeat(1, 1fr) }
     r-grid[columns-m="2"] { --grid-tc: repeat(2, 1fr) }
     r-grid[columns-m="3"] { --grid-tc: repeat(3, 1fr) }
