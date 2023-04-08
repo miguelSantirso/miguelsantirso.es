@@ -3,7 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap');
 
-html {font-size: 125%;} /*20px*/
+html { font-size: 125%; } /*20px*/
+@media only screen and (max-width: 601px) {
+  .html { font-size: 100%; }
+  .body { padding: 0.5rem; }
+}
 
 body {
   font-family: 'Inter', sans-serif;
