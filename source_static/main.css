@@ -3,7 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap');
 
-html {font-size: 125%;} /*20px*/
+html { font-size: 125%; } /*20px*/
+@media only screen and (max-width: 768px) {
+  html { font-size: 105%; }
+  body { padding: 0.5rem; }
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -57,7 +61,7 @@ a { color: #273E0A; }
     .icn_description_cell p { margin: 0.15rem 0 0; line-height: 1.5; }
     .icn_description_cell img { width: 100%; }
 
-@media only screen and (min-width: 601px) and (max-width: 890px) {
+@media only screen and (min-width: 768px) and (max-width: 890px) {
     r-grid[columns-m="1"] { --grid-tc: repeat(1, 1fr) }
     r-grid[columns-m="2"] { --grid-tc: repeat(2, 1fr) }
     r-grid[columns-m="3"] { --grid-tc: repeat(3, 1fr) }
@@ -67,3 +71,13 @@ a { color: #273E0A; }
     r-grid[columns-m="7"] { --grid-tc: repeat(7, 1fr) }
     r-grid[columns-m="8"] { --grid-tc: repeat(8, 1fr) }
 }
+
+/* articles */
+
+.header { align-items: center; }
+  .header img { vertical-align: middle; width: 100%; margin-top: 6%; }
+
+.abstract { color: #74786f; font-size: 0.8rem; }
+  .abstract-date { color: black; }
+
+.long-text { max-width: 42rem; margin: 0 auto; }
