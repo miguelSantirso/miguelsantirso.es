@@ -7,11 +7,16 @@ I am a Spanish engineer and product designer with more than two decades dedicate
 Currently working for [Voodoo](https://www.voodoo.io/) as Studio Director.
 |||||
 
-purpose: |
-In trying to communicate who I am beyond my professional identity, I chose to publish my personal manifesto: An always-evolving statement of what I believe is my purpose in life. A personal guide based on my values and strategies.
-
-Read [A Flourishing Life](http://miguelsantirso.es/articles/personal-guide.html).
-|||||
+articles:
+    - article:
+        key: personal-guide
+        title: A Flourishing Life
+        desc: "A personal manifesto, updated regularly, that helps me understand who I am and who I want to become. It is addressed to myself but I make it public believing we should all be less reserved about ourselves."
+    
+    - article:
+        key: the-power-of-difficult-things
+        title: The Power of Doing Difficult Things
+        desc: Personal reflection on the power of doing difficult things, and the story of how I lost and regained my ability to accomplish them.
 
 notable_work:
     - work:

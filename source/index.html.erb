@@ -6,9 +6,17 @@
 
 </r-grid>
 
-<r-grid columns="6">
-  <r-cell span="row"><h3>A Flourishing Life</h3></r-cell>
-  <r-cell span="row"><%= md(@purpose) %></r-cell>  
+<r-grid columns=6 columns-s=3>
+  <r-cell span="row"><h2>Write-ups</h2></r-cell>
+  <% @articles.each do |a| %>
+    <% if article=a['article'] %>
+      <r-cell span=3 class="title_description_cell">
+        <p class="text_small"><b><a href="<%= p("./articles/#{article['key']}.html") %>"><%= article['title'] %></a></b></p>
+        <p class="text_small"><%= article['desc'] %></p>
+      </r-cell>
+    <% end %>
+  <% end %>
+
 </r-grid>
 
 <r-grid columns=6 columns-m=4 columns-s=2>
