@@ -4,15 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap');
 
 html { font-size: 125%; } /*20px*/
-@media only screen and (max-width: 768px) {
-  html { font-size: 105%; }
-  body { padding: 0.5rem; }
-}
 
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   line-height: 1.75;
+  max-width: 1200px; margin: 0 auto; padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html { font-size: 105%; }
+  body { padding: 1rem; }
 }
 
 p {margin-bottom: 1rem;}
@@ -42,11 +44,7 @@ small, .text_small {font-size: 0.8rem;}
 
 /* styles */ 
 
-body { background-color: #fbfefb; max-width: 1200px; margin: 0 auto; padding: 2rem; }
-
-@media only screen and (max-width: 768px) {
-  body { padding: 1rem; }
-}
+body { background-color: #fbfefb; }
 
 b { font-weight: bold; }
 

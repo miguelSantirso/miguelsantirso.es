@@ -1,6 +1,6 @@
 <r-grid id="title" columns=6 columns-s="3">
 
-  <r-cell span="3"><img src="img/name.png" alt="Miguel Santirso" /></r-cell>
+  <r-cell span="3"><img src="img/name.jpg" alt="Miguel Santirso" width="280" /></r-cell>
 
   <r-cell span="3"><%= md(@bio) %></r-cell>
 
@@ -11,7 +11,7 @@
   <% @articles.each do |a| %>
     <% if article=a['article'] %>
       <r-cell span=3 class="title_description_cell">
-        <p class="text_small"><b><a href="<%= p("./articles/#{article['key']}.html") %>"><%= article['title'] %></a></b></p>
+        <p><b><a href="<%= p("./articles/#{article['key']}.html") %>"><%= article['title'] %></a></b></p>
         <p class="text_small"><%= article['desc'] %></p>
       </r-cell>
     <% end %>
