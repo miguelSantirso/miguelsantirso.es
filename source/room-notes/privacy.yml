@@ -1,0 +1,73 @@
+nb_layout: /text.html
+
+title: Room Notes Privacy Policy
+text: |
+# Room Notes Privacy Policy
+
+## Summary:
+
+- Recordings, transcript text, and app settings are stored on your device until you delete them.
+- When a recording is transcribed, the audio is sent to our transcription service and then removed from server storage after processing.
+- We use limited information like purchase status and error logs to run the app, and Apple handles App Store purchases.
+
+## Privacy Policy:
+
+Privacy Policy for Room Notes
+Effective date: June 27, 2026
+
+Room Notes is an iPhone app for recording in-person meetings, storing meeting audio locally, transcribing recordings through pay-as-you-go transcript hours, and exporting transcripts.
+
+Information Room Notes Stores On Your Device
+
+Room Notes stores recordings, audio chunks, transcript metadata, transcript text, transcription diagnostics, language settings, transcript-hour balance information, and related app settings on your device.
+
+Purchases
+
+Room Notes offers transcript-hour packs through Apple's in-app purchase system. Apple processes the purchase. Room Notes may receive and store transaction information needed to unlock transcript hours, restore purchases, prevent abuse, and provide support.
+
+Audio Recording
+
+Room Notes uses the iPhone microphone only after you grant microphone permission and start a recording. Meeting audio is saved locally on your device. You can delete recordings from inside the app.
+
+Transcription
+
+When you choose to transcribe a recording, Room Notes uploads the relevant audio to the Room Notes transcription service. The service sends the audio to AssemblyAI for transcription and speaker labels when available. The transcript is returned to the app and saved locally on your device.
+
+Uploaded audio is deleted from app server storage after transcription succeeds, fails, is canceled, or is acknowledged by the app after local receipt. Room Notes also requests deletion of the provider transcript after processing. Abandoned uploaded audio may be removed automatically by cleanup jobs after about 24 hours. Temporary backend job and event records are removed after the app saves the terminal result locally and acknowledges receipt. Older stuck or expired backend records may be purged automatically.
+
+Sharing And Export
+
+Room Notes exports Markdown transcripts and audio chunks only when you choose to share them through the iOS share sheet. The destination you choose may have its own privacy practices.
+
+Developer Servers
+
+Room Notes may use developer-operated servers built on Supabase to process transcription requests, validate purchases, track transcript-hour balances, protect against abuse, and diagnose transcription failures. These servers process meeting audio only when you choose to transcribe a recording.
+
+Analytics And Tracking
+
+Room Notes does not include third-party advertising SDKs and does not track you across apps or websites.
+
+Diagnostics
+
+Room Notes may store local and server-side diagnostic information to help show transcription progress, recover failed transcription jobs, prevent duplicate charges, and investigate failures. Diagnostics may include recording duration, transcription status, provider error codes, timing information, and internal job identifiers. Diagnostics should not include transcript text unless explicitly needed for support and disclosed before collection.
+
+Children
+
+Room Notes is not directed to children. The app does not knowingly collect personal information from children.
+
+Changes
+
+This policy may be updated as Room Notes changes. The effective date above will be updated when material changes are made.
+
+Contact
+
+For support or privacy questions, contact:
+
+[Miguel Santirso](tirso.00+roomnotes@gmail.com)
+
+If your storefront or jurisdiction requires a legal mailing address, publish the seller or business address used for App Store Connect on the final hosted version of this policy.
+
+## Contact Us
+
+If you still need more information please contact: [Miguel Santirso](tirso.00+roomnotes@gmail.com)
+||||
