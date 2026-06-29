@@ -60,7 +60,7 @@ end
 def load_yml yml_path
   yml_str = File.read(yml_path).force_encoding("UTF-8")
   yml_str = convert_markdown_blocks(yml_str)
-  return YAML.load(yml_str, permitted_classes: [Date])
+  return YAML.safe_load(yml_str, permitted_classes: [Date], aliases: true)
 end
 
 
